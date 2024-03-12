@@ -1,0 +1,58 @@
+/* styles.css */
+
+.board {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .list {
+    width: 300px;
+    padding: 8px;
+    height: 90vh;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    margin: 8px;
+  }
+  
+  .list h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  
+  .card:hover {
+    background-color: #eaeaea;
+  }
+  
+  /* Optional: Add styles for when a card is being dragged */
+  .card.dragging {
+    opacity: 0.5;
+  }
+  
+  .custom-scroll::-webkit-scrollbar {
+    width: 8px;
+    margin-top: 20px;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 80px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    border: none;
+    background-color: rgb(232, 231, 231);
+  }
