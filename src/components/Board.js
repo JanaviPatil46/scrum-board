@@ -8,6 +8,7 @@ import ListData from './ListData';
 const Board = () => {
   const [lists, setLists] = useState(ListData);
 
+
   const moveCard = (sourceListId, destinationListId, cardIndex) => {
     const sourceListIndex = lists.findIndex(list => list.id === sourceListId);
     const destinationListIndex = lists.findIndex(list => list.id === destinationListId);
@@ -26,11 +27,16 @@ const Board = () => {
           <List
             key={list.id}
             id={list.id}
-            title={list.title}
+           
+            title={`${list.title} (${list.cards.length})`}
             cards={list.cards}
             moveCard={moveCard}
+           
           />
+          
         ))}
+       
+      
       </div>
     </DndProvider>
   );
